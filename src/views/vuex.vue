@@ -1,3 +1,3 @@
 <template>
-  <div>vuex</div>
+  <div>vuexsasdaasd</div>
 </template>
