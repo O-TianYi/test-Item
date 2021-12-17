@@ -6,10 +6,18 @@
 
 <script lang="ts">
 import { defineComponent, reactive } from 'vue'
+import axios from '../utils/axios'
 
 export default defineComponent({
   setup() {
-    const result = reactive({})
+    let result = reactive({})
+    axios('/user/')
+      .then((res) => {
+        result = res
+      })
+      .catch((error) => {
+        console.log(error)
+      })
     return {
       result
     }
