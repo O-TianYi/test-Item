@@ -10,6 +10,8 @@ import axios from '../utils/axios'
 
 export default defineComponent({
   setup() {
+    console.log('hello world')
+
     axios
       .get('/users/xPoet')
       .then((res) => {
