@@ -11,7 +11,7 @@ export default defineConfig({
       '@': resolve(__dirname, 'src')
     }
   },
-  base: '/', //设置打包路径
+  base: '/', // 设置打包路径
   server: {
     port: 4000,
     open: true,
